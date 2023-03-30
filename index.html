@@ -40,7 +40,7 @@
                                 <option >Essential 20 Mbps</option>
                                 <option >Comparety</option>
                             </select>
-                                <a href="#" class="second-menu__navigation-element" aria-label="navigation element" tabindex="0" class="">TV & Streaming</a>
+                                <a href="#" class="second-menu__navigation-element" aria-label="navigation element" tabindex="0" class="">TV <span class="adaptive">& Streaming</span></a>
                                 <a href="#" class="second-menu__navigation-element" aria-label="navigation element" tabindex="0" class="">Calls</a>
                                 <a href="#" class="second-menu__navigation-element" aria-label="navigation element" tabindex="0" class="">Deals</a>
                             <select class="second-menu__navigation-select select active" name="why choose links select" id="navSelectChoose" tabindex="0">
@@ -57,17 +57,160 @@
                     </div>
                 </div>
             </header>
-            <div class="hero-banner" role="banner" tabindex="-1" aria-label="banner contain: sales header '35 funts for 1000 megabites broadband'.">
+            <div class="hero-banner container" role="banner" tabindex="-1" aria-label="banner contain: sales header '35 funts for 1000 megabites broadband'.">
                 <div class="hero-banner__saleslogo">
-
+                    <img src="./acess/image 45.png"  alt="banner image">
                 </div>
                 <h1 id="headTitle" class="hero-banner__headtitle" aria-label="Header. We’re faster and over £500 cheaper than the big guys">We’re faster and over £500 cheaper than the big guys</h1>
                 <h2 id="headsubtitle" class="hero-banner__headsubtitle" aria-label="Get 19x the UK average download speed with our 1,000 Mbps limited time offer.">Get 19x the UK average download speed with our 1,000 Mbps limited time offer.</h2>
-                <div class="hero-banner__input">
+                <form class="hero-banner__form container">
                     <label for="adresscheck" style="display:none; tabindex:-1;">Check your address to get started</label>
-                    <input type="text" name="adresscheck" id="adresscheck" placeholder="Check your address to get started">
-                </div>
+                    <input class="hero-banner__form-input" type="text" name="adresscheck" id="adresscheck" placeholder="Check your address to get started">
+                    <input type="submit" class="form-input__submit" value="&#62;" aria-label="submit button">
+                </form>
                 <button class="hero-banner__button button" id="bannerBtn" aria-label="Get your deal">Get your deal</button>
+            </div>
+            <div class="checker container" role="listbox" tabindex="-1">
+                <h2 id="checkerTitle" class="checker__title title" tabindex="0" aria-label="It’s a no brainer! Grab your ultimate deal">It’s a no brainer! Grab your ultimate deal</h2>
+                <div class="checker__change-buttons" id="chengeBTN">
+                    <div class="change-buttons__24" tabindex="0" aria-label="prices for">24 months</div>
+                    <div class="change-buttons__12" tabindex="0" aria-label="prices for">12 months</div>
+                </div>
+                <div class="cheker-cards__container" tabindex="-1">
+                    <div class="checker__info-card" aria-label="card contain information about prices and speed pockets" tabindex="0" role="listitem">
+                        <h3 class="info-card__title" tabindex="0" aria-label="card contain price for this internet bitrait">200 Mbps <br>
+                            Fibre Broadband</h3>
+                        <div class="info-card__price">
+                            <span class="price-info__discount">$27.50</span>
+                            <span class="price-info" tabindex="0">$25</span>
+                            <span id="month" aria-label="price for one month">/month</span>
+                        </div>
+                        <div class="info-card__speed-line" tabindex="-1">
+                            <span class="speed-line__info" tabindex="-1"><span>Download/upload a video (100 MB)*</span> <span>26.6s</span>   </span>
+                            <div class="line"><div class="gradient-line"></div></div>
+                        </div>
+                        <div class="info-card__discription" tabindex="-1">
+                            <ul class="discription__list" tabindex="-1">
+                                <li class="discription__list-item" tabindex="0"> For moderate use on multiple devices, streaming HD, browsing & downloads </li>
+                                <li class="discription__list-item" tabindex="0" aria-label="includes">Avg. download/upload: 200 Mbps</li>
+                                <li class="discription__list-item" tabindex="0" aria-label="includes">£32.50/month after initial contract</li>
+                                <li class="discription__list-item" tabindex="0" aria-label="includes">FREE installation & setup FREE Linksys</li>
+                            </ul>
+                        </div>
+                        <div class="info-card__button-container" aria-label="button checking theAvailability" id="infoCardBtn">
+                            <button class="button-container button">Check Availability</button>
+                        </div>
+                    </div>
+                    <div class="checker__info-card" aria-label="card contain information about prices and speed pockets" tabindex="0" role="listitem">
+                        <h3 class="info-card__title" tabindex="0" aria-label="card contain price for this internet bitrait">200 Mbps <br>
+                            Fibre Broadband</h3>
+                        <div class="info-card__price">
+                            <span class="price-info__discount">$27.50</span>
+                            <span class="price-info" tabindex="0">$25</span>
+                            <span id="month" aria-label="price for one month">/month</span>
+                        </div>
+                        <div class="info-card__speed-line" tabindex="-1">
+                            <span class="speed-line__info" tabindex="-1">Download/upload a video (100 MB)*</span>
+                            <div class="line"><div class="gradient-line"></div></div>
+                        </div>
+                        <div class="info-card__discription" tabindex="-1">
+                            <ul class="discription__list" tabindex="-1">
+                                <li class="discription__list-item" tabindex="0" aria-label="includes"> For moderate use on multiple devices, streaming HD, browsing & downloads </li>
+                                <li class="discription__list-item" tabindex="0" aria-label="includes">Avg. download/upload: 200 Mbps</li>
+                                <li class="discription__list-item" tabindex="0" aria-label="includes">£32.50/month after initial contract</li>
+                                <li class="discription__list-item" tabindex="0" aria-label="includes">FREE installation & setup FREE Linksys</li>
+                            </ul>
+                        </div>
+                        <div class="info-card__button-container" aria-label="button checking theAvailability" id="infoCardBtn">
+                            <button class="button-container button">Check Availability</button>
+                        </div>
+                    </div>
+                    <div class="checker__info-card" aria-label="card contain information about prices and speed pockets" tabindex="0" role="listitem">
+                        <h3 class="info-card__title" tabindex="0" aria-label="card contain price for this internet bitrait">200 Mbps <br>
+                            Fibre Broadband</h3>
+                        <div class="info-card__price">
+                            <span class="price-info__discount">$27.50</span>
+                            <span class="price-info" tabindex="0">$25</span>
+                            <span id="month" aria-label="price for one month">/month</span>
+                        </div>
+                        <div class="info-card__speed-line" tabindex="-1">
+                            <span class="speed-line__info" tabindex="-1">Download/upload a video (100 MB)*</span>
+                            <div class="line"><div class="gradient-line"></div></div>
+                        </div>
+                        <div class="info-card__discription" tabindex="-1">
+                            <ul class="discription__list" tabindex="-1">
+                                <li class="discription__list-item" tabindex="0" aria-label="includes"> For moderate use on multiple devices, streaming HD, browsing & downloads </li>
+                                <li class="discription__list-item" tabindex="0" aria-label="includes">Avg. download/upload: 200 Mbps</li>
+                                <li class="discription__list-item" tabindex="0" aria-label="includes">£32.50/month after initial contract</li>
+                                <li class="discription__list-item" tabindex="0" aria-label="includes">FREE installation & setup FREE Linksys</li>
+                            </ul>
+                        </div>
+                        <div class="info-card__button-container" aria-label="button checking theAvailability" id="infoCardBtn">
+                            <button class="button-container button">Check Availability</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="faq container" role="contentinfo" tabindex="-1">
+                <h2 class="faq__title title" tabindex="0" aria-label="title discription">FAQs</h2>
+                <div class="faq__select-container">
+                    <div class="faq__select-item">
+                        <span tabindex="0" aria-label="your Question">Question?</span>
+                        <button tabindex="0" aria-label="open discription">
+                            <img src="./acess/Icon material-close.svg" alt="icon '+' for FAQ">
+                        </button>
+                    </div>
+                    <div class="faq__select-item">
+                        <span tabindex="0" aria-label="your Question">Question?</span>
+                        <button tabindex="0" aria-label="open discription">
+                            <img src="./acess/Icon material-close.svg" alt="icon '+' for FAQ">
+                        </button>
+                    </div>
+                    <div class="faq__select-item">
+                        <span tabindex="0" aria-label="your Question">Question?</span>
+                        <button tabindex="0" aria-label="open discription">
+                            <img src="./acess/Icon material-close.svg" alt="icon '+' for FAQ">
+                        </button>
+                    </div>
+                    <button class="faq__button" tabindex="0" aria-label="clicable button contain">See all FAQs</button>
+                </div>
+            </div>
+            <div class="contacts container" role="contentinfo">
+                <h2 class="contacts__title title"  tabindex="0" aria-label="contact page title">Need help?</h2>
+                <div class="contacts-info__container">
+                    <div class="info-element">
+                        <img src="./acess/Icon 64x64.svg" alt="icon for info element. 'Headphones'">
+                        <h3 class="info-element__title" tabindex="0">For Customer Service</h3>
+                        <p class="info-element__information" tabindex="0">
+                            Monday - Friday: 8am - 10pm
+Weekends: 9am - 7pm
+                        </p>
+                        <div class="info-element__callinfo">
+                            <span id="call" tabindex="0">Call us on</span>
+                            <a href="#" id="phone" tabindex="0" aria-label="phone number">0800 082 0770</a>
+                        </div>
+                    </div>
+                    <div class="info-element">
+                        <img src="./acess/Support team.svg" alt="icon for info element 'phone">
+                        <h3 class="info-element__title" tabindex="0">To purchase our packages</h3>
+                        <p class="info-element__information" tabindex="0">
+                            Monday - Friday: 9am - 8pm
+Saturday: 9am - 5pm
+                        </p>
+                        <div class="info-element__callinfo">
+                            <span id="call" tabindex="0">Call us on</span>
+                            <a href="#" id="phone" tabindex="0" aria-label="phone number">0800 082 0770</a>
+                        </div>
+                    </div>
+                    <div class="info-element">
+                        <img src="./acess/Broadband (1).svg" alt="icon for info element 'letter'">
+                        <h3 class="info-element__title" tabindex="0" aria-label="title contain">For more help</h3>
+                        <p class="info-element__information" tabindex="0" aria-label="contant info">
+                            Get in touch with our Customer Service Team
+                        </p>
+                        <a href="#" class="subm" tabindex="0" aria-label="clicable link">Submit request</a>
+                    </div>
+                </div>
             </div>
         </div>
     </div>

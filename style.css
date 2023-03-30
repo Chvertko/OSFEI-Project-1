@@ -7,8 +7,10 @@
 :root{
     --font-weight-400: 400;
     --font-weight-500: 500;
+    --font-weight-700: 700;
     --font-size-15:15px;
     --font-size-18:18px;
+    --font-size-45:45px;
     --main-text-color: #524658;
     --active-text-color: #370050;
     --page-background-gradient:#F8F8F8;
@@ -17,6 +19,13 @@
 }
 body{
     background-color:#fff;
+}
+ul{
+    padding-inline-start: 0 !important;
+} 
+.title{
+    margin-bottom: 50px;
+    margin-top: 50px;
 }
 /*PAGE BORDERS*/
 .wrapper{
@@ -84,14 +93,11 @@ body{
     margin-right: 30px;
 }
 /*SELECT STYLES*/
-.select{
-    background-image: url(./acess/arrow-down-svgrepo-com.svg), linear-gradient(to bottom, #F8F8F8 0%,#F8F8F8 100%);
-    display: inline-block;
-    user-select: none;
-    border: none;
-}
 .navigation-list a{
     margin-right: 30px;
+}
+.select{
+    border:none;
 }
 #navSelect{
     max-width: 100px;
@@ -117,9 +123,424 @@ body{
 /*HERO BANNER STYLES*/
 .hero-banner{
     background-color: var(--banner-color);
-    height: 100vh;
+    height: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
+}
+.hero-banner{
+    margin-bottom: 30px;
+}
+.hero-banner__saleslogo{
+    box-sizing: border-box;
+    width: 365px;
+    height: 300px;
+}
+
+.hero-banner__headtitle{
+    font-size: var(--font-size-45);
+    font-weight: var(--font-weight-700);
+    color: #fff;
+    margin-bottom: 30px;
+    text-align: center;
+}
+.hero-banner__headsubtitle{
+    font-size: var(--font-size-18);
+    font-weight: var(--font-weight-400);
+    color: #fff;
+    margin-bottom: 30px;
+    text-align: center;
+}
+/*HERO BANNER INPUT STYLES*/
+.hero-banner__form{
+    display:flex;
+    flex-direction: row;
+}
+.hero-banner__form-input{
+    margin-bottom: 30px;
+    background-color: #fff;
+    padding-left: 20px;
+    padding-right: 20px;
+    width: 480px;
+    height: 59px;
+    border-radius: 24px;
+    box-shadow: 0px 3px 40px rgba(0, 0, 0, 0.08);
+    flex-grow: 2;
+}
+.hero-banner__form-input input:focus{
+    outline: none;
+}
+.form-input__submit{
+    position: relative;
+    background-color: var(--akcident-color);
+    height: 45px;
+    width: 45px;
+    border-radius: 50%;
+    right: 50px;
+    top: 9px;
+    color:white;
+    border:none;
+    font-size: 30px;
+    line-height: 10px;
+  }
+  .hero-banner__button{
+    margin-bottom: 30px;
+  }
+  #bannerBtn{
+    background-color: #fff !important;
+    color:var(--akcident-color) !important;
+  }
+/*CHECKER PAGE*/
+.checker{
+    display: flex;
+    flex-direction: column;
+}
+.cheker-cards__container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+}
+.cheker-cards__container *{
+    margin-bottom: 30px;
+}
+.checker__title{
+    color: var(--banner-color);
+    font-weight: var(--font-weight-700);
+    font-size: 35px;
+    text-align: center;
+}
+/*CLICK BUTTON 24/12 STYLES*/
+.checker__change-buttons{
+    border-radius:24px;
+    display: flex;
+    align-items: center;
+    margin: 0 auto;
+    margin-bottom: 30px;
+}
+.checker__change-buttons *{
+    margin: 0 auto;
+}
+.change-buttons__24{
+    background-color: var(--active-text-color);
+    box-shadow: 0px 3px 25px rgba(0, 0, 0, 0.12);
+    color:#fff;
+    width: 130px;
+    padding: 15px 15px 15px 15px;
+    border-radius: 24px 0px 0px 24px;
+    text-align: center;
+}
+.change-buttons__12{
+    box-shadow: 0px 3px 25px rgba(0, 0, 0, 0.12);
+    padding: 15px 15px 15px 15px;
+    border-radius: 0px 24px 24px 0px;
+    width: 130px;
+    text-align: center;
+}
+/*CHECKER CARD STYLES*/
+.checker__info-card{
+    width: 350px;
+    box-shadow: 0px 3px 40px rgba(0, 0, 0, 0.12);
+    border-radius: 20px;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+.info-card__title{
+    font-weight: var(--font-weight-700);
+    font-size: 25px;
+    line-height: 31px;
+    color:var(--active-text-color);
+    margin-bottom:30px;
+    text-align: center;
+}
+.info-card__button-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 30px;
+}
+.button-container{
+    margin-bottom: 0;
+}
+.info-card__price{
+    /* margin: 0 auto;
+    display: grid;
+    position: relative;
+    grid-template-areas: "discount info info ."
+                          ". info info ." 
+                          ". info info month"                         
+    ;
+    margin-bottom: 30px;
+    padding-left: 30px;
+    padding-right: 30px; */
+    display: flex;
+    justify-content: center;
+    padding-left: 10%;
+    padding-right: 10%;
+}
+.info-card__price *{
+    margin-bottom: 0 !important;
+}
+.price-info__discount{
+    /* grid-area: discount; */
+    margin-right: 10px;
+    align-self: start;
+    color:#C81162;
+    font-size: var(--font-size-18);
+    font-weight: var(--font-weight-700);
+    align-items: center;
+}
+.price-info{
+    /* grid-area: info; */
+    /* position: absolute;
+    left: 5px;
+    top: 30%; */
+    font-size: var(--font-size-45);
+    color:var(--banner-color);
+    font-weight: var(--font-weight-700);
+    align-self: center;
+}
+#month{
+    margin-left: 10px;
+    /* grid-area: month; */
+    align-self: end;
+    font-weight: var(--font-weight-400);
+    color: var(--active-text-color);
+    font-size: 15px;
+    /* align-items: center; */
+}
+/* --> CHECKER CARD SPEED LINE STYLES */
+.info-card__speed-line{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.speed-line__info{
+    display: flex;
+    justify-content: space-between;
+    font-size: 12px;
+    font-weight: var(--font-weight-400);
+    color:#524658;
+    text-align: justify;
+    margin-bottom: 5px !important;
+}
+.speed-line__info span{
+    margin-bottom: 0 !important;
+}
+
+.line{
+    width: 100%;
+    height: 8px;
+    background: #F8F8F8;
+    border-radius:4px;
+    margin-bottom: 0;
+}
+.gradient-line{
+    width: 30%;
+    height: 8px;
+    background:linear-gradient(90deg, #C81162 0%, #CD205D 8.33%, #D22F58 15.62%, #D63D53 26.04%, #DB4C4D 35.94%, #DF5A48 46.35%, #E46843 57.29%, #E8763E 68.23%, #EC8439 76.56%, #F19134 87.5%, #F49E2F 98.96%);
+    border-radius: 4px;
+    margin-bottom: 0;
+}
+/* --> DICSCRIPTION LIST STYLES */
+.discription__list{
+    position: relative;
+}
+.discription__list li{
+    list-style: none;
+    padding-left: 30px;
+    background-image: url("./acess/Icon\ material-check.svg");
+    background-repeat: no-repeat;
+    background-position: left center;
+}
+
+/* FAQ STYLES */
+.faq{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.faq__title{
+    font-weight: var(--font-weight-700);
+    font-size: 35px;
+    line-height: 41px;
+    color: #370050;
+    text-align: center;
+}
+.faq__select-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+}
+.faq__select-item{
+    width: 100%;
+    max-width: 800px;
+    height: 90px;
+    background: #f8f8f8;
+    border-radius:28px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 30px;
+    padding-right: 30px;
+    flex: 0 0 auto;
+}
+.faq__select-item span{
+    font-weight: var(--font-weight-500);
+    color:#370050;
+    font-size: var(--font-size-18);
+}
+.faq__select-item button{
+    border: none;
+    background: none;
+    align-items: center;
+}
+.faq__button{
+    background: #FEF1E1;
+    border-radius: 10px;
+    color:#EC6225;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 27px;
+    width: 275px;
+    height: 50px;
+    border:none;
+}
+/* CONTACTS INFO */
+.contacts{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.contacts__title{
+    font-weight: 700;
+    font-size: 30px;
+    color:#370050;
+    margin-bottom: 50px;
+}
+.contacts-info__container{
+    display: flex;
+    gap: 25px;
+    margin-bottom: 50px;
+}
+.info-element{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    width: 100%;
+    max-width: 250px;
+}
+.info-element__title{
+    font-size: var(--font-size-18);
+    font-weight: var(--font-weight-500);
+    color:var(--active-text-color);
+}
+.info-element__information{
+    text-align: center;
+}
+.info-element__callinfo{
+    display: flex;
+    gap: 10px;
+}
+#call{
+    font-size: var(--font-size-18);
+    font-weight: var(--font-weight-500);
+    color:var(--active-text-color);
+}
+#phone{
+    font-size: var(--font-size-18);
+    font-weight: var(--font-weight-500);
+    color:#EC6225;
+    text-decoration: underline;
+    
+}
+.subm{
+    font-size: var(--font-size-18);
+    font-weight: var(--font-weight-500);
+    color:#EC6225;
+    text-decoration: underline;
+}
+/* ---> ADAPTIVE DESIGN */
+@media (max-width:900px) {
+    .container{
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    .first-menu{
+        display: none;
+    }
+    .second-menu__button{
+        display: none;
+    }
+    .second-menu {
+        display: flex;
+        flex-direction: column;
+        padding-bottom: 10px;
+        align-items: flex-start;
+        padding-left: 15px;
+        padding-right: 15px;
+        gap: 10px;
+    }
+    .secont-menu__logo{
+    }
+    .second-menu__navigation a{
+        margin: 0;
+    }
+    .second-menu__navigation {
+        width: 100%;
+        margin: 0;
+    }
+    .adaptive{
+        display: none;
+    }
+    #navSelectChoose{
+        display: none;
+    }
+    .navigation-list{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        text-align: center;
+        gap: 15px;
+        height: 0;
+    }
+    #navSelect{
+
+        margin: 0;
+    }
+    .select{
+        text-align: center;
+        background:none;
+        background-image:none;
+        appearance:none;
+        border:none;
+        border-bottom: 3px solid var(--banner-color);
+    }
+    .hero-banner__headtitle{
+        font-size: 35px;
+    }
+    .hero-banner__form{
+        display: block;
+    }
+    .hero-banner__form-input{
+        width: 300px;
+    }
+}
+@media (max-width:475px) {
+    .form-input__submit{
+        bottom: 0px;
+        left: 295px;
+        right: 0px;
+        top: -85px;
+    }
+    .contacts-info__container{
+        flex-direction: column;
+    }
+    
 }
